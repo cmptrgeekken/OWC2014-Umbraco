@@ -1,0 +1,11 @@
+OWC2014.Umbraco/App_Data/TEMP/
+OWC2014.Umbraco/App_Data/Logs/
+OWC2014.Umbraco/App_Data/preview/
+OWC2014.Umbraco/App_Data/Umbraco.sdf
+OWC2014.Umbraco/App_Data/umbraco.config
+OWC2014.Umbraco/bin/
+OWC2014.Umbraco/obj/
+*.suo
+*.user
+_ReSharper*
+
