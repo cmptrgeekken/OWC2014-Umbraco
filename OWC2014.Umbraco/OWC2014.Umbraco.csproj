@@ -23,6 +23,8 @@
     <NuGetPackageImportStamp>f9a04a4b</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <TransformWebConfigEnabled>False</TransformWebConfigEnabled>
+    <AutoParameterizationWebConfigConnectionStrings>False</AutoParameterizationWebConfigConnectionStrings>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -30,6 +32,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PublishDatabases>false</PublishDatabases>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -38,6 +42,8 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <PublishDatabases>false</PublishDatabases>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AutoMapper">
@@ -208,6 +214,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="umbraco\Install\Views\Web.config" />
     <Content Include="Views\Web.config" />
     <Content Include="macroScripts\Web.config" />
     <Content Include="config\UrlRewriting.config" />
@@ -239,7 +246,6 @@
     <Content Include="umbraco\assets\fonts\opensans\OpenSans-Semibold-webfont.ttf" />
     <Content Include="umbraco\assets\fonts\opensans\OpenSans-Semibold-webfont.woff" />
     <Content Include="umbraco\Install\Views\Index.cshtml" />
-    <Content Include="umbraco\Install\Views\Web.config" />
     <Content Include="umbraco\lib\bootstrap\less\accordion.less" />
     <Content Include="umbraco\lib\bootstrap\less\alerts.less" />
     <Content Include="umbraco\lib\bootstrap\less\bootstrap.less" />
@@ -352,12 +358,7 @@
     <Content Include="App_Data\packages\created\createdPackages.config" />
     <Content Include="App_Browsers\Form.browser" />
     <Content Include="App_Browsers\w3cvalidator.browser" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
+    <None Include="Properties\PublishProfiles\ipHouse.pubxml" />
     <Content Include="xslt\Web.config" />
   </ItemGroup>
   <ItemGroup>
